@@ -46,3 +46,12 @@ Investigate caching by running fetchall twice in succession to see whether
 the reported time changes much. Do you get the same content each time?
 Modify fetchall to print it's output to a file so it can be examined.
  */
+
+ /*
+ file, fileErr := os.Create("file")
+if fileErr != nil {
+    fmt.Println(fileErr)
+    return
+}
+fmt.Fprintf(file, "%v\n", i)
+  */
