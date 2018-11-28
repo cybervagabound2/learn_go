@@ -39,3 +39,10 @@ func fetch(url string, ch chan<- string) {
 	secs := time.Since(start).Seconds()
 	ch <- fmt.Sprintf("%.2fs %7d %s", secs, nbytes, url)
 }
+
+/*
+TODO: Find a web site that produces a large amount of data.
+Investigate caching by running fetchall twice in succession to see whether
+the reported time changes much. Do you get the same content each time?
+Modify fetchall to print it's output to a file so it can be examined.
+ */
